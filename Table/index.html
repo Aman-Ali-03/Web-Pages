@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="Generate a clear multiplication table for any number.">
+  <title>Number Studio — Multiplication Tables</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <div class="content">
+      <header class="intro">
+        <span class="eyebrow">NUMBER STUDIO</span>
+        <h1>Make numbers<br><span>make sense.</span></h1>
+        <p>Enter any number to explore its multiplication table.</p>
+      </header>
+      <form class="input-form" id="input-form">
+        <label for="user-input">Your number</label>
+        <input
+          id="user-input"
+          name="number"
+          type="number"
+          step="any"
+          placeholder="Enter a number..."
+          required
+        >
+        <button type="submit">Generate table <span aria-hidden="true">→</span></button>
+      </form>
+      <section class="result" id="result" aria-live="polite" hidden>
+        <div class="result-heading">
+          <span class="result-kicker">YOUR RESULTS</span>
+          <h2 id="result-title"></h2>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Step</th>
+              <th scope="col">Equation</th>
+              <th scope="col">Answer</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
