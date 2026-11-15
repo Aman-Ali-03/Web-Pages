@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-slate-800 flex justify-center items-center h-screen">
+<div class="bg-slate-700 border-slate-950 p-6 rounded-md justify-center items-center flex-col min-w-80">
+    <h2 class="text-3xl font-bold text-white text-center mb-2">Login Acc</h2>
+    <form class="p-1">
+        <div class="pb-1">
+            <label class="block mb-1 text-white">Enter username: </label>
+            <input id="username" class="  hover:border-stone-950 w-full bg-slate-500 px-1 py-1 rounded-sm mb-2" type="text" placeholder="Aman-Ali-03">
+        </div>
+        <div class="pb-1">
+            <label  class="block mb-1 text-white">Password</label>
+            <input id="password" type="password" placeholder="password" class="hover:border-stone-950 w-full bg-slate-500 px-1 py-1 rounded-sm mb-2">
+        </div>
+        <button onclick="login()" class=" w-full rounded-sm bg-blue-500 hover:bg-blue-600 px-1 py-1 font-bold mt-1 text-slate-700" type="button">Submit</button>
+        <div id="result" class="text-white text-3xl font-bold mt-4"></div>
+    </form>
+    <script src="Login_info.js"></script>
+</div>
+</body>
+</html>
